@@ -27,7 +27,7 @@ th { background: #8881; }
 <p>酔っ払ナビ（以下「本アプリ」）は、利用者が安全に帰宅できるよう見守る iOS アプリです。本アプリは、目的の達成に必要な最小限の情報だけを扱い、<strong>利用者を識別できる情報をサーバーに保存しません。</strong></p>
 
 <h2>1. 端末内にのみ保存される情報</h2>
-<p>次の情報は利用者の端末内にのみ保存され、開発者のサーバーへ送信されることはありません。</p>
+<p>次の情報は原則として利用者の端末内に保存されます。ただし、見守りメールを利用する場合は、送信に必要な連絡先情報とメール内容がSupabase Edge FunctionsおよびResendを経由します。</p>
 <ul>
 <li>自宅の住所と位置</li>
 <li>見守り連絡先の名前・電話番号・メールアドレス</li>
@@ -115,7 +115,7 @@ th { background: #8881; }
 <p>Yoppara Navi ("the App") is an iOS app that watches over users on their way home. The App handles only the minimum information needed for that purpose and <strong>stores no personally identifying information on our servers.</strong></p>
 
 <h2>1. Information stored only on your device</h2>
-<p>The following is stored solely on your device and is never sent to our servers:</p>
+<p>The following is stored on your device by default. When Watch Mail is used, contact information and message content required for delivery pass through Supabase Edge Functions and Resend.</p>
 <ul>
 <li>Your home address and location</li>
 <li>The name, phone number, and email address of your emergency contact</li>
